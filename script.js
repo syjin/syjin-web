@@ -1,5 +1,5 @@
 const ENDPOINT =
-  'https://script.google.com/macros/s/AKfycbzDnXRMrmOxiwdHqlRTefWLmnw0OeRCXAjfzIIAexmJPBfsJixxyuiL3w32aj--1E7Aiw/exec'; // ← 복사한 URL
+  'https://script.google.com/macros/s/AKfycbzDnXRMrmOxiwdHqlRTefWLmnw0OeRCXAjfzIIAexmJPBfsJixxyuiL3w32aj--1E7Aiw/exec';
 
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.content-right form');
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
       name: nameInput.value.trim(),
       email: emailInput.value.trim(),
       message: messageInput.value.trim(),
-      interest: selectedInterest || 'General',
+      interest: selectedInterest || 'Uncategorized',
     };
 
     const btn = form.querySelector('.send-btn');
